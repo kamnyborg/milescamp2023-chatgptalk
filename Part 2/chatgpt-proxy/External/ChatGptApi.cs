@@ -33,7 +33,9 @@ namespace chatgpt_proxy.External
             var requestContent = new MultipartFormDataContent
             {
                 { new StreamContent(file.OpenReadStream()), "file", "test.mp3" },
-                { new StringContent("whisper-1"), "model" }
+                { new StringContent("whisper-1"), "model" },
+                { new StringContent("The transcript is about a workshop where we talk about ChatGPT API and Whisper API"), "prompt" },
+                { new StringContent("en"), "language" }
             };
 
             request.Content = requestContent;
