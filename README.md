@@ -1,6 +1,6 @@
-# MilesCamp-2023
+# milescamp2023-chatgptalk
 
-Today we are building a talking chatbot with the new ChatGPT and Whisper API!
+Today we are building "ChatGPTalk" - a POC for talking chatbot with the ChatGPT and Whisper API!
 
 ## Requirements
 - Node.js/npm (https://nodejs.org/en/download/)
