@@ -59,8 +59,6 @@ namespace chatgpt_proxy.External
             {
                 Model = "gpt-3.5-turbo",
                 Messages = _messages.ToArray(),
-                // max_tokens = maxTokens,
-                // temperature = temperature
             };
 
             var requestContent = new StringContent(JsonConvert.SerializeObject(requestData));
