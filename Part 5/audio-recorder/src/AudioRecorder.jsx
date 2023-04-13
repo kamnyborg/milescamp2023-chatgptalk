@@ -90,7 +90,6 @@ const AudioRecorder = () => {
 
     return (
         <div>
-            <h2>Audio Recorder</h2>
             <main>
                 <div className="audio-controls">
                     {!permission ? (
@@ -115,11 +114,11 @@ const AudioRecorder = () => {
                             </div>
                             <div className="transcribe-container">
                                 <button onClick={transcribeAudio}>Transcribe</button>
-                                Result: {text}
+                                Result: "{text}"
                             </div>
                             <div className="answer-container">
                                 <button onClick={answerQuestion}>Answer</button>
-                                Result: {answer}
+                                Result: "{answer}"
                             </div>
                         </>
                     ) : null}
